@@ -1,0 +1,77 @@
+$primary-color: #333;
+$secondary-color: gray;
+$background-color:#333;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}
+
+header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  }
+}
+
+.product {
+  background-color: $secondary-color;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    text-align: center;
+    size:100px;
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: black;
+  }
+
+  p {
+    color: black;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: $secondary-color;
+    border: none;
+    margin-left: 50px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 20px 0;
+  text-align: center;
+}
